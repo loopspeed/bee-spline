@@ -1,0 +1,20 @@
+{
+  "name": "bee-spline",
+  "version": "1.0.0",
+  "description": "Creates a spline around specified elements",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loopspeed/bee-spline.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/loopspeed/bee-spline/issues"
+  },
+  "homepage": "https://github.com/loopspeed/bee-spline#readme"
+}
