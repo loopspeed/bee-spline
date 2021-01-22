@@ -24,11 +24,11 @@
           occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </div>
-      <div class="image-placeholder"></div>
+      <div id="image1" class="image-placeholder"></div>
     </section>
 
     <section class="section">
-      <div class="image-placeholder"></div>
+      <div id="image2" class="image-placeholder"></div>
       <div>
         <h3>Lorem ipsum dolor sit amet</h3>
         <p>
@@ -50,26 +50,15 @@
           occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </div>
-      <div class="image-placeholder"></div>
+      <div id="image3" class="image-placeholder"></div>
     </section>
 
     <script type="module">
-        import BeeSpline from '../lib/index.js'
+      import BeeSpline from '../lib/index.js'
 
-
-      window.onload = function() {
-
-        let points = []
-        const images = document.getElementsByClassName("image-placeholder")
-        for (let image of images) {
-        const { x, y } = image.getBoundingClientRect()
-        points.push({ x, y })
-        }
-
-        console.log({points})
-
+      window.onload = function () {
         const beespline = new BeeSpline(document.body)
-        //   const points = [{x:10,y:100},{x:2,y:300},{x:15,y:350},{x:10,y:500},{x:5,y:600}]
+        const points = [{ id: 'image1' }, { id: 'image2' }, { id: 'image3' }]
         beespline.draw(points)
       }
     </script>
